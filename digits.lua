@@ -142,7 +142,7 @@ loaded_model = torch.load(filename)
 loaded_eval = function(dataset)
    local count = 0
    for i = 1,dataset.size do
-      local output = model1:forward(dataset.data[i])
+      local output = loaded_model:forward(dataset.data[i])
       local _, index = torch.max(output, 1) -- max index
       local digit = index[1] % 10
       if digit == dataset.label[i] then count = count + 1 end
@@ -152,4 +152,4 @@ loaded_eval = function(dataset)
 end
 
 -- re-evaluate testset
-loaded_eval(testset)
+print(string.format('Accuracy on loaded model: %4f', loaded_eval(testset)))
