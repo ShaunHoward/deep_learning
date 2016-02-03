@@ -1,0 +1,6 @@
+Position: Deep Learning Research Assistant
+-Conduct research about deep learning and deep neural nets
+-Survey deep learning frameworks such as Torch, Cuda, Theano
+-Implement Lua code for Torch machine learning
+-Research GPU hardware properties and distributed computation
+-Learn how to effectively use Torch and GPUs to control the Baxter robot 
