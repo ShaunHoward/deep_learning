@@ -1,3 +1,10 @@
 # installation notes for digit recognition with torch/lua
 luarocks install mnist
 luarocks install dp
+
+# for CUDA
+sudo luarocks install cunnx
+
+
+rnn : Recurrent neural network library ;
+hypero : Simple distributed hyper-optimization library.
