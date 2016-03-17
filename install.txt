@@ -1,6 +1,9 @@
 # installation notes for digit recognition with torch/lua
 luarocks install mnist
+
+# deep learning with images
 luarocks install dp
+luarocks install image
 
 # for CUDA
 sudo luarocks install cunnx
